@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/img-index.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Estilos de Navbar */ 
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    background-color:transparent;
+    padding: 15px;
+}
+
+.navbar ul{
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+.navbar li{
+    text-align: end;
+}
+
+.navbar a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: #F2A939;
+    transition: color 0.3s ease
+}
+
+.txt-foody{
+    margin-top: -15px;
+    color: white;
+}
+
+/* Contenido del centro */
+#texto{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#texto p{
+    color: white;
+    font-size: 17px;
+}
+
+/* Estilos de boton */
+
+.btn-informacion{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.btn-informacion a{
+    display: inline-block;
+    background-color: #0e161f68;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-informacion a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-informacion a:hover {
+    background-color: #0e161f98;
+}
+
+.activo{
+    border-radius: 10px;
+    padding: 10px;
+    background-color:rgba(255, 255, 0, 0.299) ;
+}
+
+/* Estilos de seccion */
+.seccion{
+    margin-top: 30px;
+    background-color: #0e161f98;
+    height: 41.8vh;
+}
+
+.food1 img{
+    width: 400px;
+    height: 230px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.seccion h2{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.food1{
+    justify-content: space-around;
+    display: flex;
+}
+.comida1 a {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease-in-out;
+}
+
+.comida1:hover a {
+    transform: scale(1.1);
+}
+
+.comida1 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    pointer-events: none;
+}
+
+.comida2 a {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease-in-out;
+}
+
+.comida2:hover a {
+    transform: scale(1.1);
+}
+
+.comida2 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    pointer-events: none;
+}
+
+.comida3 a {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease-in-out;
+}
+
+.comida3:hover a {
+    transform: scale(1.1);
+}
+
+.comida3 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    pointer-events: none;
+}
